@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#CEEBB2">
+  <meta name="description" id="meta-description" content="Hatted Duck Studios — independent games, experiments, and devlogs.">
+  <title id="page-title">Hatted Duck Studios</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="Hatted Duck Studios home">
+      <img src="assets/duck-head.png" alt="" width="52" height="52">
+      <span data-text="studioName">Hatted Duck Studios</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#devlog">Devlog</a>
+      <a href="#about">About</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow" data-text="eyebrow">INDEPENDENT GAME STUDIO</p>
+        <h1><span data-html="heroTitle">Small games.<br><span>Big hat.</span></span></h1>
+        <p class="lede" data-text="heroDescription">Hatted Duck Studios makes small, strange, handmade games and shares the process along the way.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#games" data-text="gamesButton">See the games</a>
+          <a class="button social-link" data-link="youtube" href="#devlog" data-text="devlogButton">Watch the devlog</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Hatted Duck Studios logo">
+        <div class="logo-frame">
+          <img src="assets/hatted-duck-studios-logo.png" alt="Hatted Duck Studios logo" width="256" height="256">
+        </div>
+        <p class="duck-note" data-text="duckNote">professionally hatted.</p>
+      </div>
+    </section>
+
+    <section class="section shell" id="games">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p class="kicker">THE IMPORTANT BIT</p>
+          <h2>Games</h2>
+        </div>
+      </div>
+      <div id="games-list"></div>
+    </section>
+
+    <section class="section shell" id="devlog">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p class="kicker">MAKING THE THING</p>
+          <h2>Devlog</h2>
+        </div>
+      </div>
+      <div class="panel split-panel">
+        <div>
+          <h3 data-text="devlogHeading">Follow the mess.</h3>
+          <p data-text="devlogDescription">Prototypes, game-jam nonsense, pixel art, Godot experiments, bugs that become features, and the occasional finished thing.</p>
+        </div>
+        <a class="button primary social-link" data-link="youtube" href="#">YouTube →</a>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p class="kicker">WHO DID THIS</p>
+          <h2>About</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="panel">
+          <h3 data-text="aboutHeading">Hatted Duck Studios</h3>
+          <p data-text="aboutParagraph1">An independent game studio focused on compact ideas, strong personality, reusable systems, and actually finishing things.</p>
+          <p data-text="aboutParagraph2">The duck is management. The hat is non-negotiable.</p>
+        </div>
+        <div class="values" id="values-list"></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="links">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p class="kicker">FIND THE DUCK</p>
+          <h2>Elsewhere</h2>
+        </div>
+      </div>
+      <div class="link-grid" id="social-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <img src="assets/duck-head.png" alt="" width="44" height="44">
+    <p>© <span id="year"></span> <span data-text="studioName">Hatted Duck Studios</span>.</p>
+    <p class="footer-joke" data-text="footerJoke">No ducks were consulted.</p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
