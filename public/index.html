@@ -15,41 +15,44 @@
   <header class="site-header shell">
     <a class="brand" href="#top" aria-label="Hatted Duck Studios home">
       <img src="assets/duck-head.png" alt="" width="52" height="52">
-      <span data-text="studioName">Hatted Duck Studios</span>
+      <span data-text="studioName" data-style="studioName">Hatted Duck Studios</span>
     </a>
-    <nav aria-label="Main navigation">
-      <a href="#games">Games</a>
-      <a href="#devlog">Devlog</a>
-      <a href="#about">About</a>
-      <a href="#links">Links</a>
-    </nav>
+    <div class="header-tools">
+      <div class="theme-picker" id="theme-picker" aria-label="Choose site colors"></div>
+      <nav aria-label="Main navigation">
+        <a href="#games" data-label="navGames" data-style="label:navGames">Games</a>
+        <a href="#devlog" data-label="navDevlog" data-style="label:navDevlog">Devlog</a>
+        <a href="#about" data-label="navAbout" data-style="label:navAbout">About</a>
+        <a href="#links" data-label="navLinks" data-style="label:navLinks">Links</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero shell" id="top">
       <div class="hero-copy">
-        <p class="eyebrow" data-text="eyebrow">INDEPENDENT GAME STUDIO</p>
-        <h1><span data-html="heroTitle">Small games.<br><span>Big hat.</span></span></h1>
-        <p class="lede" data-text="heroDescription">Hatted Duck Studios makes small, strange, handmade games and shares the process along the way.</p>
+        <p class="eyebrow" data-text="eyebrow" data-style="eyebrow">INDEPENDENT GAME STUDIO</p>
+        <h1><span class="hero-title-top" data-text="heroTitleTop" data-style="heroTitleTop">SMALL GAMES.</span><span class="hero-title-bottom" data-text="heroTitleBottom" data-style="heroTitleBottom">B I G H A T.</span></h1>
+        <p class="lede" data-text="heroDescription" data-style="heroDescription">Hatted Duck Studios makes small, strange, handmade games and shares the process along the way.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#games" data-text="gamesButton">See the games</a>
-          <a class="button social-link" data-link="youtube" href="#devlog" data-text="devlogButton">Watch the devlog</a>
+          <a class="button primary" href="#games" data-label="gamesButton" data-style="label:gamesButton">See the games</a>
+          <a class="button social-link" data-link="youtube" href="#devlog" data-label="devlogButton" data-style="label:devlogButton">Watch the devlog</a>
         </div>
       </div>
       <div class="hero-art" aria-label="Hatted Duck Studios logo">
         <div class="logo-frame">
           <img src="assets/hatted-duck-studios-logo.png" alt="Hatted Duck Studios logo" width="256" height="256">
         </div>
-        <p class="duck-note" data-text="duckNote">professionally hatted.</p>
+        <p class="duck-note" data-text="duckNote" data-style="duckNote">professionally hatted.</p>
       </div>
     </section>
 
     <section class="section shell" id="games">
       <div class="section-heading">
-        <span class="section-number">01</span>
+        <span class="section-number" data-style="sectionNumber">01</span>
         <div>
-          <p class="kicker">THE IMPORTANT BIT</p>
-          <h2>Games</h2>
+          <p class="kicker" data-label="gamesKicker" data-style="label:gamesKicker">THE IMPORTANT BIT</p>
+          <h2 data-label="gamesTitle" data-style="label:gamesTitle">Games</h2>
         </div>
       </div>
       <div id="games-list"></div>
@@ -57,34 +60,34 @@
 
     <section class="section shell" id="devlog">
       <div class="section-heading">
-        <span class="section-number">02</span>
+        <span class="section-number" data-style="sectionNumber">02</span>
         <div>
-          <p class="kicker">MAKING THE THING</p>
-          <h2>Devlog</h2>
+          <p class="kicker" data-label="devlogKicker" data-style="label:devlogKicker">MAKING THE THING</p>
+          <h2 data-label="devlogTitle" data-style="label:devlogTitle">Devlog</h2>
         </div>
       </div>
       <div class="panel split-panel">
         <div>
-          <h3 data-text="devlogHeading">Follow the mess.</h3>
-          <p data-text="devlogDescription">Prototypes, game-jam nonsense, pixel art, Godot experiments, bugs that become features, and the occasional finished thing.</p>
+          <h3 data-text="devlogHeading" data-style="devlogHeading">Follow the mess.</h3>
+          <p data-text="devlogDescription" data-style="devlogDescription">Prototypes, game-jam nonsense, pixel art, Godot experiments, bugs that become features, and the occasional finished thing.</p>
         </div>
-        <a class="button primary social-link" data-link="youtube" href="#">YouTube →</a>
+        <a class="button primary social-link" data-link="youtube" href="#" data-label="devlogLink" data-style="label:devlogLink">YouTube →</a>
       </div>
     </section>
 
     <section class="section shell" id="about">
       <div class="section-heading">
-        <span class="section-number">03</span>
+        <span class="section-number" data-style="sectionNumber">03</span>
         <div>
-          <p class="kicker">WHO DID THIS</p>
-          <h2>About</h2>
+          <p class="kicker" data-label="aboutKicker" data-style="label:aboutKicker">WHO DID THIS</p>
+          <h2 data-label="aboutTitle" data-style="label:aboutTitle">About</h2>
         </div>
       </div>
       <div class="about-grid">
         <div class="panel">
-          <h3 data-text="aboutHeading">Hatted Duck Studios</h3>
-          <p data-text="aboutParagraph1">An independent game studio focused on compact ideas, strong personality, reusable systems, and actually finishing things.</p>
-          <p data-text="aboutParagraph2">The duck is management. The hat is non-negotiable.</p>
+          <h3 data-text="aboutHeading" data-style="aboutHeading">Hatted Duck Studios</h3>
+          <p data-text="aboutParagraph1" data-style="aboutParagraph1">An independent game studio focused on compact ideas, strong personality, reusable systems, and actually finishing things.</p>
+          <p data-text="aboutParagraph2" data-style="aboutParagraph2">The duck is management. The hat is non-negotiable.</p>
         </div>
         <div class="values" id="values-list"></div>
       </div>
@@ -92,10 +95,10 @@
 
     <section class="section shell" id="links">
       <div class="section-heading">
-        <span class="section-number">04</span>
+        <span class="section-number" data-style="sectionNumber">04</span>
         <div>
-          <p class="kicker">FIND THE DUCK</p>
-          <h2>Elsewhere</h2>
+          <p class="kicker" data-label="linksKicker" data-style="label:linksKicker">FIND THE DUCK</p>
+          <h2 data-label="linksTitle" data-style="label:linksTitle">Elsewhere</h2>
         </div>
       </div>
       <div class="link-grid" id="social-grid"></div>
@@ -104,8 +107,8 @@
 
   <footer class="site-footer shell">
     <img src="assets/duck-head.png" alt="" width="44" height="44">
-    <p>© <span id="year"></span> <span data-text="studioName">Hatted Duck Studios</span>.</p>
-    <p class="footer-joke" data-text="footerJoke">No ducks were consulted.</p>
+    <p data-style="footer">© <span id="year"></span> <span data-text="studioName">Hatted Duck Studios</span>.</p>
+    <p class="footer-joke" data-text="footerJoke" data-style="footer">No ducks were consulted.</p>
   </footer>
 
   <script src="content.js"></script>
