@@ -146,3 +146,19 @@ h3 { font-size: 1.35rem; margin-top: 0; }
 }
 
 #games-list { display: grid; gap: 26px; }
+
+
+/* Frank's Office shared rendering layer */
+:root { --body-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; --display-font: Arial, Helvetica, sans-serif; --radius: 0px; --shadow-offset: 6px; }
+.header-tools { display:flex; align-items:center; justify-content:flex-end; gap:18px; }
+.theme-picker { display:flex; align-items:center; gap:5px; }
+.theme-choice { width:22px; height:22px; padding:0; border:2px solid var(--ink); border-radius:50%; background:var(--theme-color); cursor:pointer; box-shadow:2px 2px 0 var(--ink); }
+.theme-choice[aria-pressed="true"] { outline:2px solid var(--duck); outline-offset:2px; transform:translate(1px,1px); box-shadow:1px 1px 0 var(--ink); }
+body { font-family:var(--body-font); }
+h1, h2 { font-family:var(--display-font); }
+.hero-title-top, .hero-title-bottom { display:block; }
+h1 .hero-title-top { color:var(--ink); -webkit-text-stroke:0; text-shadow:none; }
+h1 .hero-title-bottom { color:var(--bill); -webkit-text-stroke:2px var(--ink); text-shadow:4px 4px 0 var(--duck); margin-top:.12em; }
+.panel, .game-card, .link-card, .button, .value, .eyebrow, .status, .brand img, .site-footer img { border-radius:var(--radius); }
+@media (max-width:850px) { .header-tools { align-items:flex-end; flex-direction:column-reverse; gap:12px; } }
+@media (max-width:560px) { .header-tools { width:100%; align-items:flex-start; } }
