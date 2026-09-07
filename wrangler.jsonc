@@ -4,5 +4,15 @@
   "compatibility_date": "2026-09-05",
   "assets": {
     "directory": "./public"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "hattedduckstudios.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.hattedduckstudios.com",
+      "custom_domain": true
+    }
+  ]
 }
